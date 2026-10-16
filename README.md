@@ -59,7 +59,6 @@ The program generates two line charts:
 ![Filter Distortion on Clean Signal](images/filter-distortion.png)
 
 ## Running the Project
-## Running the Project
 
 1. Open the project in IntelliJ IDEA.
 2. Ensure Java 21 is configured and Maven dependencies are loaded.
