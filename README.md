@@ -26,6 +26,7 @@ Filter performance is evaluated using Mean Absolute Error (MAE) across different
 
 
 ## Project Structure
+
 ```text
 Signal Processing Benchmark/
 ├── src/
@@ -54,6 +55,7 @@ Signal Processing Benchmark/
 | Signal amplitude | 5.0 V |
 | Signal frequency | 2.0 Hz |
 | Noise level | 2.0 |
+| Random seed | 18 |
 | Sampling rates | 20, 40, 60, 80, 100 Hz |
 | Signal duration | 2 seconds |
 | Runs per sampling rate | 100 |
@@ -81,6 +83,15 @@ The program generates two line charts:
 
 ![Filter Distortion on Clean Signal](images/filter-distortion.png)
 
+## Key Findings
+
+- The 3-point moving-average filter reduced the average MAE by approximately 31%–46% across the tested sampling rates.
+- At 20 Hz, the 5-point filter produced a higher MAE than the original noisy signal. At sampling rates of 40 Hz and above, it outperformed the 3-point filter in terms of MAE.
+- The lowest average MAE achieved by the 5-point filter was approximately 0.421 V, at a sampling rate of 100 Hz.
+- When applied to a clean signal, the 5-point filter introduced greater distortion than the 3-point filter at every tested sampling rate.
+
+These results highlight the balance between noise reduction and signal distortion. They also demonstrate that the effectiveness of a moving-average filter depends on the sampling rate and the characteristics of the signal being processed.
+
 ## Running the Project
 
 1. Open the project in IntelliJ IDEA.
@@ -92,5 +103,4 @@ The program generates two line charts:
 
 - Evaluate additional filtering methods.
 - Compare the filters under different noise levels.
-- Use a fixed random seed to make experiments reproducible.
 - Expand unit tests to cover filter behavior and edge cases.

@@ -29,7 +29,7 @@ public class Main {
         double[] cleanFiveResults = new double[sampleRates.length];
 
         // 3. Create random number generator
-        Random random = new Random();
+        Random random = new Random(18);
         int rateIndex = 0;
         for (int sampleRate : sampleRates) {
             double totalMaeAcrossRuns = 0.0;
