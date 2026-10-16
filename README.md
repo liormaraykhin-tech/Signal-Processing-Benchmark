@@ -50,8 +50,15 @@ The program generates two line charts:
 - **MAE vs. Sampling Rate** — compares the error before filtering with the error after applying each filter.
 - **Filter Distortion on Clean Signal** — compares the changes introduced by both filters when applied to a clean signal.
 
-The results can be used to examine the balance between noise reduction and signal distortion.
+### MAE vs. Sampling Rate
 
+![MAE vs. Sampling Rate](images/mae-vs-sampling-rate.png)
+
+### Filter Distortion on Clean Signal
+
+![Filter Distortion on Clean Signal](images/filter-distortion.png)
+
+## Running the Project
 ## Running the Project
 
 1. Open the project in IntelliJ IDEA.
