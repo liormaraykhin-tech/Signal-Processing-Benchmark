@@ -46,9 +46,7 @@ public class MainTest {
     @Test
     void applyThreePointFilter_calculatesCorrectAverages() {
         double[] input = {2, 4, 8, 10};
-
         double[] result = Main.applyThreePointFilter(input);
-
         assertEquals(3.0, result[0], 0.0001);
         assertEquals(14.0 / 3.0, result[1], 0.0001);
         assertEquals(22.0 / 3.0, result[2], 0.0001);

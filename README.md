@@ -24,6 +24,29 @@ Filter performance is evaluated using Mean Absolute Error (MAE) across different
 - JFreeChart
 - JUnit
 
+
+## Project Structure
+```text
+Signal Processing Benchmark/
+├── src/
+│   ├── main/java/
+│   │   └── Main.java
+│   └── test/java/
+│       └── MainTest.java
+├── images/
+│   ├── filter-distortion.png
+│   └── mae-vs-sampling-rate.png
+├── pom.xml
+├── README.md
+└── .gitignore
+```
+
+- **Main.java** — generates signals, applies moving-average filters, calculates MAE, and creates charts.
+- **MainTest.java** — contains unit tests for key parts of the implementation.
+- **pom.xml** — manages Maven dependencies and build configuration.
+- **images/** — stores the experiment result charts displayed in this README.
+- **.gitignore** — specifies files and directories that Git should ignore.
+
 ## Experiment Settings
 
 | Parameter | Value |
