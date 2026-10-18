@@ -114,9 +114,7 @@ public class MainTest {
         // MAE compares corresponding samples, so both arrays
         // must contain the same number of elements.
         // Here, 3 != 2, so the calculation is invalid.
-        assertThrows(
-                IllegalArgumentException.class,
-                () -> Main.calculateMAE(actual, reference)
+        assertThrows(IllegalArgumentException.class, () -> Main.calculateMAE(actual, reference)
         );
     }
 }

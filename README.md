@@ -97,7 +97,8 @@ These results highlight the balance between noise reduction and signal distortio
 1. Open the project in IntelliJ IDEA.
 2. Ensure Java 21 is configured and Maven dependencies are loaded.
 3. Run the `Main` class.
-4. Review the results printed in the console and the generated charts.
+4. Run `mvn test` to execute the unit tests.
+5. Review the results printed in the console and the generated charts.
 
 ## Possible Extensions
 
